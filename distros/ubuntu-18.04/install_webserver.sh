@@ -29,15 +29,15 @@ InstallWebServer() {
     echo -e "[${green}DONE${NC}]\n"
 	
   if [ "$CFG_PHPMYADMIN" == "yes" ]; then
-	echo "==========================================================================================="
-	echo "Attention: When asked 'Configure database for phpmyadmin with dbconfig-common?' select 'NO'"
-	echo "Due to a bug in dbconfig-common, this can't be automated."
-	echo "==========================================================================================="
-	echo "Press ENTER to continue... "
-	read DUMMY
-	echo -n "Installing phpMyAdmin... "
-	apt-get -y install phpmyadmin
-	echo -e "[${green}DONE${NC}]\n"
+	#echo "==========================================================================================="
+	#echo "Attention: When asked 'Configure database for phpmyadmin with dbconfig-common?' select 'NO'"
+	#echo "Due to a bug in dbconfig-common, this can't be automated."
+	#echo "==========================================================================================="
+	#echo "Press ENTER to continue... "
+	#read DUMMY
+	#echo -n "Installing phpMyAdmin... "
+	#apt-get -y install phpmyadmin
+	#echo -e "[${green}DONE${NC}]\n"
   fi
 	
   # if [ "$CFG_XCACHE" == "yes" ]; then
